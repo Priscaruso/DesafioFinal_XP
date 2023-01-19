@@ -8,9 +8,13 @@ Esse desafio consiste na criação de dois projetos.
 
 :small_blue_diamond: [Etapas](#etapas-do-projeto-1)
 
-:small_blue_diamond: [Pré-requisitos](#pre-requisitos-do-projeto-1)
+:small_blue_diamond: [Pré-requisitos](#pré-requisitos-do-projeto-1)
 
 :small_blue_diamond: [Banco de Dados MySQL e o SGBD MySQL Workbench](#banco-de-dados-mysql-e-o-sgbd-mysql-workbench)
+
+:small_blue_diamond: [Criação do ambiente virtual](#criação-do-ambiente-virtual)
+
+:small_blue_diamond: [Instalação do jupyter notebook](#instalação-do-jupyter-notebook)
 
 :small_blue_diamond: [Execução](#execução-do-projeto-1)
 
