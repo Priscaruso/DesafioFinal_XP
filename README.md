@@ -2,21 +2,43 @@
 
 Esse desafio consiste na criação de dois projetos.
 
-### Tópicos 
+### Tópicos do Projeto 1
 
-:small_blue_diamond: [Enunciado do projeto 1](#enunciado-do-projeto-1)
+:small_blue_diamond: [Enunciado do projeto](#enunciado-do-projeto-1)
 
-:small_blue_diamond: [Etapas do projeto 1](#etapas-do-projeto-1)
+:small_blue_diamond: [Etapas](#etapas-do-projeto-1)
 
-:small_blue_diamond: [Execução](#execução)
+:small_blue_diamond: [Pré-requisitos](#pre-requisitos-do-projeto-1)
 
 :small_blue_diamond: [Banco de Dados MySQL e o SGBD MySQL Workbench](#banco-de-dados-mysql-e-o-sgbd-mysql-workbench)
+
+:small_blue_diamond: [Execução](#execução-do-projeto-1)
 
 :small_blue_diamond: [Diagrama entidade e relacionamento](#diagrama-entidade-e-relacionamento)
 
 :small_blue_diamond: [Script para Criação das estruturas das Tabelas](#script-para-criação-das-estruturas-das-tabelas)
 
+
+
+
+
+### Tópicos do Projeto 2
+
+:small_blue_diamond: [Enunciado do projeto](#enunciado-do-projeto-2)
+
+:small_blue_diamond: [Etapas](#etapas-do-projeto-2)
+
+:small_blue_diamond: [Execução](#execução-do-projeto-2)
+
 :small_blue_diamond: [Banco de Dados MongoDB](#banco-de-dados-mongodb)
+
+
+
+
+
+
+
+
 
 
 
@@ -37,14 +59,13 @@ O processo para alcançar o objetivo desejado consiste nas seguintes etapas:
 * Criar algoritmo de clusterização K-Means para o agrupamento dos dados
 * Criar visualização para os dados processados
 
-
-## Execução
-Para realizar o projeto foi usado um jupyter notebook usando a linguagem Python. 
-Primeiramente, é preciso criar um ambiente virtual para instalar todos os pacotes necessários no projeto com os seguintes comandos:
-
-`python -m venv /path/to/directory`, onde /path/to/directory é o diretório onde será criado o ambiente virtual e depois ativar o ambiente virtual com o comando `. /path/to/directory/bin/activate`.
-  
-Depois é necessário baixar o arquivo do notebook 'Desafio2_IGTI.ipynb' e os datasets usados contido na pasta 'inputs'. Depois é só fazer o upload do notebook para o Google Colab, seguir cada passo descrito no notebook, fazendo os ajustes necessários no notebook quanto ao local de armazenamento do dataset e aos dados de conexão para acessar o banco MySQL.
+## Pré-requisitos do projeto 1
+Antes de executar o projeto, é preciso atender algumas condições para que o projeto funcione corretamente:
+* Instalar o MySQL Community Server e o MySQL Workbench na máquina local
+* Criar um ambiente virtual
+* Instalar o Jupyter Notebook na máquina local
+* Instalar os pacotes necessários conforme instruções contidas no script do projeto criado no jupyter notebook
+OBS: a forma de instalação desses pacotes pode mudar conforme o seu sistema operacional
 
 ## Banco de Dados MySQL e o SGBD MySQL Workbench
 Para criar as estruturas de tabelas para armazenar os dados das compras, clientes, produtos e estados, foi utilizado o Banco de Dados relacional MySQL. Para usá-lo baixar instalar seguindo as instruções no link abaixo, dependendo do sistema operacional:
@@ -55,5 +76,26 @@ Além do servidor, é preciso instalar também o MySQL Workbench usado como o SG
   
 https://dev.mysql.com/downloads/workbench/
 
+## Criação do ambiente virtual
+
+
+## Instalação do Jupyter Notebook
+
+
+## Execução do projeto 1
+Para realizar o projeto foi usado um jupyter notebook instalado na máquina local Ubuntu 20.04 usando a linguagem Python. 
+Conforme mencionado no tópico anterior, é preciso criar um ambiente virtual antes de executar o projeto para instalar todos os pacotes necessários com os seguintes comandos:
+
+`python -m venv /path/to/directory`, onde /path/to/directory é o diretório onde será criado o ambiente virtual e depois ativar o ambiente virtual com o comando `. /path/to/directory/bin/activate`.
+  
+Depois é necessário baixar o arquivo do notebook do [Projeto 1](https://github.com/Priscaruso/DesafioFinal_XP/blob/main/DesafioFinal_projeto1.ipynb) e os datasets usados contido na pasta [input](https://github.com/Priscaruso/DesafioFinal_XP/tree/main/input). Depois é só fazer executar o comando `jupyter notebook` no diretório contendo o notebook baixado para abrí-lo, seguir cada passo descrito no notebook, fazendo os ajustes necessários quanto ao local de armazenamento do dataset, do arquivo gerado, e dos dados de conexão para acessar o banco MySQL.
+
 ## Diagrama entidade e relacionamento
 O diagrama de modelagem relacional criado no banco MySQL encontra-se no arquivo [diagrama_compras_supermercado](https://github.com/Priscaruso/DesafioFinal_XP/blob/main/diagrama_compras_supermercado.mwb). Basta baixar e fazer o upload dele para o MySQL Workbench para gerar o modelo.
+
+## Script para Criação das estruturas das Tabelas
+Para criar as tabelas a partir do diagrama entidade e relacionamento feito, foi gerado o script [tabelas_compras_supermercado](https://github.com/Priscaruso/DesafioFinal_XP/blob/main/tabelas_compras_supermercado.sql). Basta baixá-lo, fazer o carregamento dele no MySQL Workbench e executar o script para gerar as tabelas.
+
+-----------------------------------------------------------------------------------------
+
+## Enunciado do projeto 2
