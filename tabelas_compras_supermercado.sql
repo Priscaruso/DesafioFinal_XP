@@ -8,19 +8,19 @@ SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
 
 -- -----------------------------------------------------
--- Schema mydb
+-- Schema supermercado
 -- -----------------------------------------------------
 
 -- -----------------------------------------------------
--- Schema mydb
+-- Schema supermercado
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `mydb` DEFAULT CHARACTER SET utf8 ;
-USE `mydb` ;
+CREATE SCHEMA IF NOT EXISTS `supermercado` DEFAULT CHARACTER SET utf8 ;
+USE `supermercado` ;
 
 -- -----------------------------------------------------
--- Table `mydb`.`estado`
+-- Table `supermercado`.`estado`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`estado` (
+CREATE TABLE IF NOT EXISTS `supermercado`.`estado` (
   `cod_estado` INT NOT NULL,
   `estado` VARCHAR(45) NULL,
   `sigla_estado` VARCHAR(2) NULL,
@@ -29,9 +29,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`cliente`
+-- Table `supermercado`.`cliente`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`cliente` (
+CREATE TABLE IF NOT EXISTS `supermercado`.`cliente` (
   `cod_cliente` INT NOT NULL,
   `sexo` INT NULL,
   `idade` INT NULL,
@@ -44,16 +44,16 @@ CREATE TABLE IF NOT EXISTS `mydb`.`cliente` (
   INDEX `fk_cliente_estado1_idx` (`cod_estado` ASC) VISIBLE,
   CONSTRAINT `fk_cliente_estado1`
     FOREIGN KEY (`cod_estado`)
-    REFERENCES `mydb`.`estado` (`cod_estado`)
+    REFERENCES `supermercado`.`estado` (`cod_estado`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`produto`
+-- Table `supermercado`.`produto`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`produto` (
+CREATE TABLE IF NOT EXISTS `supermercado`.`produto` (
   `cod_produto` INT NOT NULL,
   `produto` VARCHAR(45) NULL,
   `cod_classe_produto` INT NULL,
@@ -64,9 +64,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`compra`
+-- Table `supermercado`.`compra`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`compra` (
+CREATE TABLE IF NOT EXISTS `supermercado`.`compra` (
   `cod_cliente` INT NOT NULL,
   `cod_produto` INT NOT NULL,
   `qtd_produto` INT NULL,
@@ -76,12 +76,12 @@ CREATE TABLE IF NOT EXISTS `mydb`.`compra` (
   INDEX `fk_compra_produto1_idx` (`cod_produto` ASC) VISIBLE,
   CONSTRAINT `fk_compra_cliente`
     FOREIGN KEY (`cod_cliente`)
-    REFERENCES `mydb`.`cliente` (`cod_cliente`)
+    REFERENCES `supermercado`.`cliente` (`cod_cliente`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_compra_produto1`
     FOREIGN KEY (`cod_produto`)
-    REFERENCES `mydb`.`produto` (`cod_produto`)
+    REFERENCES `supermercado`.`produto` (`cod_produto`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
