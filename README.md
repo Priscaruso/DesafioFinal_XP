@@ -54,10 +54,10 @@ Uma rede de supermercado precisa criar uma forma de conhecer melhor o seu públi
 
 O processo para alcançar o objetivo desejado consiste nas seguintes etapas:
 * Coletar dados fictícios das seguintes fontes: 
-* compras.xls - dados das compras realizadas pelos clientes em arquivo excel
-*   clientes.json - dados dos clientes em arquivo JSON
-*   estados.txt - dados de estados dos clientes em arquivo txt
-*   https://profleandrolessa.wordpress.com/exercicio-de-coleta-de-dados/ - dados de produtos armazenados na web
+  * compras.xls - dados das compras realizadas pelos clientes em arquivo excel
+  * clientes.json - dados dos clientes em arquivo JSON
+  * estados.txt - dados de estados dos clientes em arquivo txt
+  * https://profleandrolessa.wordpress.com/exercicio-de-coleta-de-dados/ - dados de produtos armazenados na web
 * Criar estrutura de armazenamento usando banco de dados MySQL
 * Verificar se há dados ausentes e corrigí-los
 * Criar algoritmo de clusterização K-Means para o agrupamento dos dados
@@ -81,18 +81,21 @@ Além do servidor, é preciso instalar também o MySQL Workbench usado como o SG
 https://dev.mysql.com/downloads/workbench/
 
 ## Criação do ambiente virtual
+Um ambiente virtual é necessário para criar um ambiente isolado específico para o projeto onde vai ser instalado todos os pacotes que ele precisar. Caso haja tenha o pacote virtualenv, que é para criação de ambientes virtuais, instalado, será preciso instalá-lo com os seguintes comandos:
 
+* executar `pip install virtualenv` no terminal do linux para instalar o pacote virtualenv
+* executar `virtualenv -p python3 /path/to/directory`, onde /path/to/directory é o diretório onde será criado o ambiente virtual 
+* ativar o ambiente virtual com o comando `. /path/to/directory/bin/activate`.
 
 ## Instalação do Jupyter Notebook
-
+Para instalar o Jupyter notebook onde será criado e processado os códigos do projeto, executar os seguintes passos:
+* `pip install jupyter notebook` para instalar o pacote do jupyter notebook
+* `python -m ipykernel install --user --name /path/to/directory` para informar para o jupyter que o kernel vai ser instalado no ambiente virtual criado
 
 ## Execução do projeto 1
-Para realizar o projeto foi usado um jupyter notebook instalado na máquina local Ubuntu 20.04 usando a linguagem Python. 
-Conforme mencionado no tópico anterior, é preciso criar um ambiente virtual antes de executar o projeto para instalar todos os pacotes necessários com os seguintes comandos:
-
-`python -m venv /path/to/directory`, onde /path/to/directory é o diretório onde será criado o ambiente virtual e depois ativar o ambiente virtual com o comando `. /path/to/directory/bin/activate`.
-  
-Depois é necessário baixar o arquivo do notebook do [Projeto 1](https://github.com/Priscaruso/DesafioFinal_XP/blob/main/DesafioFinal_projeto1.ipynb) e os datasets usados contido na pasta [input](https://github.com/Priscaruso/DesafioFinal_XP/tree/main/input). Depois é só fazer executar o comando `jupyter notebook` no diretório contendo o notebook baixado para abrí-lo, seguir cada passo descrito no notebook, fazendo os ajustes necessários quanto ao local de armazenamento do dataset, do arquivo gerado, e dos dados de conexão para acessar o banco MySQL.
+Para realizar o projeto foi usado um jupyter notebook instalado na máquina local Ubuntu 20.04 usando a linguagem Python.
+ 
+Primeiro, é necessário baixar o arquivo do notebook do [Projeto 1](https://github.com/Priscaruso/DesafioFinal_XP/blob/main/DesafioFinal_projeto1.ipynb) e os datasets usados contido na pasta [input](https://github.com/Priscaruso/DesafioFinal_XP/tree/main/input). Depois é só fazer executar o comando `jupyter notebook` no diretório contendo o notebook baixado para abrí-lo, seguir cada passo descrito no notebook, fazendo os ajustes necessários quanto ao local de armazenamento do dataset, do arquivo gerado, e dos dados de conexão para acessar o banco MySQL.
 
 ## Diagrama entidade e relacionamento
 O diagrama de modelagem relacional criado no banco MySQL encontra-se no arquivo [diagrama_compras_supermercado](https://github.com/Priscaruso/DesafioFinal_XP/blob/main/diagrama_compras_supermercado.mwb). Basta baixar e fazer o upload dele para o MySQL Workbench para gerar o modelo.
