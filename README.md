@@ -95,7 +95,7 @@ Para instalar o Jupyter notebook onde será criado e processado os códigos do p
 ## Execução do projeto 1
 Para realizar o projeto foi usado um jupyter notebook instalado na máquina local Ubuntu 20.04 usando a linguagem Python.
  
-Primeiro, é necessário baixar o arquivo do notebook do [Projeto 1](https://github.com/Priscaruso/DesafioFinal_XP/blob/main/DesafioFinal_projeto1.ipynb) e os datasets usados contido na pasta [input](https://github.com/Priscaruso/DesafioFinal_XP/tree/main/input). Depois é só fazer executar o comando `jupyter notebook` no diretório contendo o notebook baixado para abrí-lo, seguir cada passo descrito no notebook, fazendo os ajustes necessários quanto ao local de armazenamento do dataset, do arquivo gerado, e dos dados de conexão para acessar o banco MySQL.
+Primeiro, é necessário baixar o arquivo do notebook do [Projeto 1](https://github.com/Priscaruso/DesafioFinal_XP/blob/main/DesafioFinal_projeto_1.ipynb) e os datasets usados contido na pasta [input](https://github.com/Priscaruso/DesafioFinal_XP/tree/main/input). Depois é só fazer executar o comando `jupyter notebook` no diretório contendo o notebook baixado para abrí-lo, seguir cada passo descrito no notebook, fazendo os ajustes necessários quanto ao local de armazenamento do dataset, do arquivo gerado, e dos dados de conexão para acessar o banco MySQL.
 
 ## Diagrama entidade e relacionamento
 O diagrama de modelagem relacional criado no banco MySQL encontra-se no arquivo [diagrama_compras_supermercado](https://github.com/Priscaruso/DesafioFinal_XP/blob/main/diagrama_compras_supermercado.mwb). Basta baixar e fazer o upload dele para o MySQL Workbench para gerar o modelo.
