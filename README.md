@@ -69,7 +69,8 @@ Antes de executar o projeto, é preciso atender algumas condições para que o p
 * Criar um ambiente virtual
 * Instalar o Jupyter Notebook na máquina local
 * Instalar os pacotes necessários conforme instruções contidas no script do projeto criado no jupyter notebook
-OBS: a forma de instalação desses pacotes pode mudar conforme o seu sistema operacional
+
+OBS: a forma de instalação desses pacotes pode mudar conforme o seu sistema operacional.
 
 ## Banco de Dados MySQL e o SGBD MySQL Workbench
 Para criar as estruturas de tabelas para armazenar os dados das compras, clientes, produtos e estados, foi utilizado o Banco de Dados relacional MySQL. Para usá-lo baixar instalar seguindo as instruções no link abaixo, dependendo do sistema operacional:
@@ -83,9 +84,9 @@ https://dev.mysql.com/downloads/workbench/
 ## Criação do ambiente virtual
 Um ambiente virtual é necessário para criar um ambiente isolado específico para o projeto onde vai ser instalado todos os pacotes que ele precisar. Caso haja tenha o pacote virtualenv, que é para criação de ambientes virtuais, instalado, será preciso instalá-lo com os seguintes comandos:
 
-* executar `pip install virtualenv` no terminal do linux para instalar o pacote virtualenv
-* executar `virtualenv -p python3 /path/to/directory`, onde /path/to/directory é o diretório onde será criado o ambiente virtual 
-* ativar o ambiente virtual com o comando `. /path/to/directory/bin/activate`.
+* Executar `pip install virtualenv` no terminal do linux para instalar o pacote virtualenv
+* Executar `virtualenv -p python3 /path/to/directory`, onde /path/to/directory é o diretório onde será criado o ambiente virtual 
+* Ativar o ambiente virtual com o comando `. /path/to/directory/bin/activate`
 
 ## Instalação do Jupyter Notebook
 Para instalar o Jupyter notebook onde será criado e processado os códigos do projeto, executar os seguintes passos:
