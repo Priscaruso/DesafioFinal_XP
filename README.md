@@ -34,10 +34,6 @@ Esse desafio consiste na criação de dois projetos.
 
 :small_blue_diamond: [Pré-requisitos](#pré-requisitos-do-projeto-2)
 
-:small_blue_diamond: [Criação do ambiente virtual](#criação-do-ambiente-virtual)
-
-:small_blue_diamond: [Instalação do jupyter notebook](#instalação-do-jupyter-notebook)
-
 :small_blue_diamond: [Execução](#execução-do-projeto-2)
 
 
@@ -59,6 +55,7 @@ O processo para alcançar o objetivo desejado consiste nas seguintes etapas:
 * Criar algoritmo de clusterização K-Means para o agrupamento dos dados
 * Criar visualização para os dados processados
 
+
 ## Pré-requisitos do projeto 1
 Antes de executar o projeto, é preciso atender algumas condições para que o projeto funcione corretamente:
 * Instalar o MySQL Community Server e o MySQL Workbench na máquina local
@@ -67,6 +64,7 @@ Antes de executar o projeto, é preciso atender algumas condições para que o p
 * Instalar os pacotes necessários conforme instruções contidas no script do projeto criado no jupyter notebook
 
 OBS: a forma de instalação desses pacotes pode mudar conforme o seu sistema operacional.
+
 
 ## Banco de Dados MySQL e o SGBD MySQL Workbench
 Para criar as estruturas de tabelas para armazenar os dados das compras, clientes, produtos e estados, foi utilizado o Banco de Dados relacional MySQL. Para usá-lo baixar instalar seguindo as instruções no link abaixo, dependendo do sistema operacional:
@@ -77,6 +75,7 @@ Além do servidor, é preciso instalar também o MySQL Workbench usado como o SG
   
 https://dev.mysql.com/downloads/workbench/
 
+
 ## Criação do ambiente virtual
 Um ambiente virtual é necessário para criar um ambiente isolado específico para o projeto onde vai ser instalado todos os pacotes que ele precisar. Caso não tenha o pacote virtualenv, que é para criação de ambientes virtuais, instalado, será preciso instalá-lo com os seguintes comandos:
 
@@ -84,18 +83,22 @@ Um ambiente virtual é necessário para criar um ambiente isolado específico pa
 * Executar `virtualenv -p python3 /path/to/directory`, onde /path/to/directory é o diretório onde será criado o ambiente virtual 
 * Ativar o ambiente virtual com o comando `. /path/to/directory/bin/activate`
 
+
 ## Instalação do Jupyter Notebook
 Para instalar o Jupyter notebook onde será criado e processado os códigos do projeto, executar os seguintes passos:
 * `pip install jupyter notebook` para instalar o pacote do jupyter notebook
 * `python -m ipykernel install --user --name /path/to/directory` para informar para o jupyter que o kernel vai ser instalado no ambiente virtual criado
 
+
 ## Execução do projeto 1
 Para realizar o projeto foi usado um jupyter notebook instalado na máquina local Ubuntu 20.04 usando a linguagem Python.
  
-Primeiro, é necessário baixar o arquivo do notebook do [Projeto 1](https://github.com/Priscaruso/DesafioFinal_XP/blob/main/DesafioFinal_projeto_1.ipynb) e os datasets usados contido na pasta [input](https://github.com/Priscaruso/DesafioFinal_XP/tree/main/input). Depois é só fazer executar o comando `jupyter notebook` no diretório contendo o notebook baixado para abrí-lo, seguir cada passo descrito no notebook, fazendo os ajustes necessários quanto ao local de armazenamento do dataset, do arquivo gerado, e dos dados de conexão para acessar o banco MySQL.
+Primeiro, é necessário baixar o arquivo do notebook do [Projeto 1](https://github.com/Priscaruso/DesafioFinal_XP/blob/main/DesafioFinal_projeto_1.ipynb) e os datasets usados contido na pasta [input](https://github.com/Priscaruso/DesafioFinal_XP/tree/main/input). Depois é só executar o comando `jupyter notebook` no diretório contendo o notebook baixado para abrí-lo, seguir cada passo descrito no notebook, fazendo os ajustes necessários quanto ao local de armazenamento do dataset, do arquivo gerado, e dos dados de conexão para acessar o banco MySQL.
+
 
 ## Diagrama entidade e relacionamento
 O diagrama de modelagem relacional criado no banco MySQL encontra-se no arquivo [diagrama_compras_supermercado](https://github.com/Priscaruso/DesafioFinal_XP/blob/main/diagrama_compras_supermercado.mwb). Basta baixar e fazer o upload dele para o MySQL Workbench para gerar o modelo.
+
 
 ## Script para Criação das estruturas das Tabelas
 Para criar as tabelas a partir do diagrama entidade e relacionamento feito, foi gerado o script [tabelas_compras_supermercado](https://github.com/Priscaruso/DesafioFinal_XP/blob/main/tabelas_compras_supermercado.sql). Basta baixá-lo, fazer o carregamento dele no MySQL Workbench e executar o script para gerar as tabelas.
@@ -108,16 +111,21 @@ Após realizarem a implantação de todas as etapas do processo de Big Data, os 
 
 ## Etapas do projeto 2
 O projeto consiste na realização das seguintes etapas:
-
-
-
+* Coletar dados do dataset mercado.csv
+* Analisar os dados coletados
+* Tratar os dados
+* Avaliar se há dados ausentes e corrigí-los
+* Identificar os itens mais frequentes
+* Criar regras de associação dos produtos
 
 
 ## Pré-requisitos do projeto 2
 Antes de executar o projeto, é preciso atender algumas condições para que o projeto funcione corretamente:
-* Criar um ambiente virtual
-* Instalar o Jupyter Notebook na máquina local
+* [Criar um ambiente virtual](#criação-do-ambiente-virtual)
+* [Instalar o Jupyter Notebook na máquina local](#instalação-do-jupyter-notebook)
 * Instalar os pacotes necessários conforme instruções contidas no script do projeto criado no jupyter notebook
+
+O passo a passo para criar um ambiente virtual e instalar o jupyter notebook encontra-se no tópico de mesmo nome do Projeto 1.
 
 OBS: a forma de instalação desses pacotes pode mudar conforme o seu sistema operacional.
 
