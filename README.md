@@ -103,7 +103,7 @@ Para criar as tabelas a partir do diagrama entidade e relacionamento feito, foi 
 -----------------------------------------------------------------------------------------
 
 ## Enunciado do projeto 2
-
+Após realizarem a implantação de todas as etapas do processo de Big Data, os analistas identificaram a necessidade de entender melhor a relação entre os produtos adquiridos pelos clientes. O objetivo do projeto é encontrar padrões ocultos nos dados de vendas dos produtos de uma rede de supermercado de forma que possa auxiliar na tomada de decisão e criar promoções, saber melhor em quais prateleiras disponibilizar os produtos no supermercado, por exemplo. O projeto será implementado em uma POC (modelo de teste) usando os dados de vendas de produtos de uma outra rede de supermercado antes de aplicar o modelo nos dados de produção do supermercado.
 
 
 ## Etapas do projeto 2
