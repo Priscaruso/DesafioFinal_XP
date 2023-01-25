@@ -32,17 +32,13 @@ Esse desafio consiste na criação de dois projetos.
 
 :small_blue_diamond: [Etapas](#etapas-do-projeto-2)
 
+:small_blue_diamond: [Pré-requisitos](#pré-requisitos-do-projeto-2)
+
+:small_blue_diamond: [Criação do ambiente virtual](#criação-do-ambiente-virtual)
+
+:small_blue_diamond: [Instalação do jupyter notebook](#instalação-do-jupyter-notebook)
+
 :small_blue_diamond: [Execução](#execução-do-projeto-2)
-
-:small_blue_diamond: [Banco de Dados MongoDB](#banco-de-dados-mongodb)
-
-
-
-
-
-
-
-
 
 
 
@@ -82,7 +78,7 @@ Além do servidor, é preciso instalar também o MySQL Workbench usado como o SG
 https://dev.mysql.com/downloads/workbench/
 
 ## Criação do ambiente virtual
-Um ambiente virtual é necessário para criar um ambiente isolado específico para o projeto onde vai ser instalado todos os pacotes que ele precisar. Caso haja tenha o pacote virtualenv, que é para criação de ambientes virtuais, instalado, será preciso instalá-lo com os seguintes comandos:
+Um ambiente virtual é necessário para criar um ambiente isolado específico para o projeto onde vai ser instalado todos os pacotes que ele precisar. Caso não tenha o pacote virtualenv, que é para criação de ambientes virtuais, instalado, será preciso instalá-lo com os seguintes comandos:
 
 * Executar `pip install virtualenv` no terminal do linux para instalar o pacote virtualenv
 * Executar `virtualenv -p python3 /path/to/directory`, onde /path/to/directory é o diretório onde será criado o ambiente virtual 
@@ -107,3 +103,26 @@ Para criar as tabelas a partir do diagrama entidade e relacionamento feito, foi 
 -----------------------------------------------------------------------------------------
 
 ## Enunciado do projeto 2
+
+
+
+## Etapas do projeto 2
+O projeto consiste na realização das seguintes etapas:
+
+
+
+
+
+## Pré-requisitos do projeto 2
+Antes de executar o projeto, é preciso atender algumas condições para que o projeto funcione corretamente:
+* Criar um ambiente virtual
+* Instalar o Jupyter Notebook na máquina local
+* Instalar os pacotes necessários conforme instruções contidas no script do projeto criado no jupyter notebook
+
+OBS: a forma de instalação desses pacotes pode mudar conforme o seu sistema operacional.
+
+
+## Execução do projeto 2
+Para realizar o projeto foi usado um jupyter notebook instalado na máquina local Ubuntu 20.04 usando a linguagem Python.
+ 
+Primeiro, é necessário baixar o arquivo do notebook do [Projeto 2](https://github.com/Priscaruso/DesafioFinal_XP/blob/main/DesafioFinal_projeto_2.ipynb) e o dataset [mercado.csv](https://github.com/Priscaruso/DesafioFinal_XP/blob/main/input/mercado.csv). Depois é só executar o comando `jupyter notebook` no diretório contendo o notebook baixado para abrí-lo, seguir cada passo descrito no notebook, fazendo os ajustes necessários quanto ao local de armazenamento do dataset.
